@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./assets/IMAGEN DA PRAIA.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  background-color: #ffffffa1;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Ubuntu';
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  padding: 2vh;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.Botao0login {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4285F4;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Botao0login:hover {
+  transform: scale(1.05);
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.user-photo {
+  border-radius: 50%;
+  width: 100px; /* Ajuste o tamanho da foto conforme necessário */
+  height: 100px; /* Ajuste o tamanho da foto conforme necessário */
+  object-fit: cover; /* Garante que a imagem seja redimensionada para preencher o círculo */
+  margin: 20px; /* Espaçamento entre a foto e o texto */
+}
+
+/* Estilos personalizados para o card */
+.card {
+  background-color: #ffffffa1;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc; /* Adicione uma borda ao redor do card */
+  border-radius: 10px; /* Borda arredondada */
+  margin: 10px; /* Margem externa para espaço */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-img-top {
+  border-top-left-radius: 10px; /* Arredonde a borda superior esquerda da imagem */
+  border-top-right-radius: 10px; /* Arredonde a borda superior direita da imagem */
+  align-items: center;
+
+}
+
+.card-body {
+  padding: 20px; /* Espaçamento interno para o conteúdo */
+  align-items: center;
+
+}
+
+.card-title {
+  font-size: 24px; /* Tamanho da fonte do título */
+  font-weight: bold; /* Texto em negrito */
+  margin-bottom: 10px; /* Margem inferior */
+
+}
+
+.card-text {
+  font-size: 18px; /* Tamanho da fonte do texto do card */
+  margin-bottom: 20px; /* Margem inferior */
+  text-align: center;
+  text-decoration: solid;
+
+}
+
+/* Adicione mais estilos personalizados conforme necessário */

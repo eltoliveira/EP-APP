@@ -1,0 +1,10 @@
+{
+  "name": "Real Chat App",
+  "short_name": "CP",
+  "icons":"",
+  "theme_color": "#006f8a",
+  "background_color": "#f2f2f2",
+  "start_url": "/",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}
