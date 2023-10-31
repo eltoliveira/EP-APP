@@ -105,5 +105,56 @@ h1 {
   text-decoration: solid;
 
 }
+.home-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f0f0f0;
+}
+
+.user-card {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.user-card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.user-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.message-section,
+.profile-section,
+settings-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.message-section .message-icon {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.text-section h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
 
 /* Adicione mais estilos personalizados conforme necessário */

@@ -1,16 +1,19 @@
+import React from "react";
+import { Outlet, useNavigate as Navigate } from "react-router-dom";
+import { isLoggedIn } from './context/AuthProvider.jsx'; // Importe o contexto de autenticação
+import Login from './Pages/Login/login.jsx'
 
-import * as React from "react";
-import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Login from "./Pages/Login/login.jsx";
 
-
-const App = createBrowserRouter([
-    {
-      path: "/",
-      element: <Login />,
-    },
-  ]);
-
+const App = () => {
+  return (
+    <div className="app-container">
+      {isLoggedIn ? (
+        <Outlet />
+      ) : (
+        <Login />
+      )}
+    </div>
+  );
+};
 
 export default App;

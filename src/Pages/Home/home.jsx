@@ -1,30 +1,32 @@
-/* import React, { useContext, useEffect, useRef } from "react";
-import { UserContext } from "../../context/UserContext";
-import { Room } from "../../components/Room";
-import { doc, setDoc } from "firebase/firestore";
-import { Contacts } from "../../components/Contacts";
+import React, { useContext } from "react";
 import { BiMessageDetail as Message } from "react-icons/bi";
-import TextSection from "../../components/TextSection";
-import Profile from "../../components/Profile";
-import Settings from "../../components/Settings";
-import { useGetPhoto } from "../../hooks/useGetPhoto";
-import UserPhoto from "../../components/UserPhoto";
 
 const Home = () => {
-  const {
-    users,
-    setUsers,
-    currentUser,
-    setCurrentUser,
-    handleToggle,
-    profileStatus,
-    sendTo,
-  } = useContext(UserContext);
-  const profilePhoto = useGetPhoto(`${currentUser.uid}`);
+  const { currentUser } = useContext(currentUser); // Obtém as informações do usuário do contexto
 
-  return (console.log("home-OK")
+  return (
+    <div className="home-container">
+      <div className="user-card">
+        <UserPhoto uid={currentUser.uid} />
+        <h2>{currentUser.displayName}</h2>
+        <p>{currentUser.email}</p>
+      </div>
+
+      {/* Outros componentes e seções, como mensagens, perfil, configurações, etc. */}
+      <div className="message-section">
+        <Message />
+        <TextSection title="Mensagens" />
+      </div>
+
+      <div className="profile-section">
+        <Profile />
+      </div>
+
+      <div className="settings-section">
+        <Settings />
+      </div>
+    </div>
   );
 };
 
 export default Home;
- */
