@@ -1,6 +1,0 @@
-{
-    "editor.defaultFoldingRangeProvider": "Bito.Bito",
-    "editor.defaultFormatter": "Zignd.html-css-class-completion",
-    "bitoAI.codeCompletion.enableAutoCompletion": true,
-    "bitoAI.codeCompletion.enableCommentToCode": true
-}
