@@ -1,27 +1,13 @@
 import * as React from "react";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
-import ReactDOM from "react-dom/client";
-import Home from "./Pages/home.jsx";
-import SessionInfo from "./components/SessionInfo.jsx";
-import ErrorPage from "./Pages/error-page";
-import "./index.css";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import Home from "./Pages/home";
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<Home />} >
-      <Route path="SessionInfo" element={<SessionInfo />} />
-        <Route path="*" element={<ErrorPage />} />
-    </Route>
-  )
-);
+const root = createRoot(document.getElementById("root"));
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+root.render(
+  <BrowserRouter>
+    {/* need to loade home at /Pages/home*/}
+    <Home />
+  </BrowserRouter>
 );
